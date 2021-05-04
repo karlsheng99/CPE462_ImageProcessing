@@ -14,7 +14,6 @@ int ** img_in, ** img_out;
 Mat image_in, image_in_copy;
 double ratio_copy, ratio_trans;
 
-//TODO: 在图中提示点击哪个方位的点
 void mousePoints(int event, int x, int y, int flag, void* userdata) {
     if (event==EVENT_LBUTTONUP) {
         circle(image_in_copy, Point2f(x, y), 8, Scalar(0, 255, 0), FILLED);
